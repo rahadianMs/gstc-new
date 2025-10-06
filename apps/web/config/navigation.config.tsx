@@ -1,4 +1,4 @@
-import { Home, User } from 'lucide-react';
+import { Home, User, FileText, MessageSquare, ClipboardList, BarChart3 } from 'lucide-react';
 import { z } from 'zod';
 
 import { NavigationConfigSchema } from '@kit/ui/navigation-schema';
@@ -16,6 +16,26 @@ const routes = [
         path: pathsConfig.app.home,
         Icon: <Home className={iconClasses} />,
         end: true,
+      },
+      {
+        label: 'Evidence Hub',
+        path: '/home/evidence-hub',
+        Icon: <FileText className={iconClasses} />,
+      },
+      {
+        label: 'Forum Diskusi',
+        path: '/home/discussion',
+        Icon: <MessageSquare className={iconClasses} />,
+      },
+      {
+        label: 'Self Assessment',
+        path: '/home/self-assessment',
+        Icon: <ClipboardList className={iconClasses} />,
+      },
+      {
+        label: 'Laporan',
+        path: '/home/reports',
+        Icon: <BarChart3 className={iconClasses} />,
       },
     ],
   },
